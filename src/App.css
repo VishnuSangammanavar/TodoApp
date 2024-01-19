@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(90deg, rgba(64,13,174,1) 0%, rgba(82,33,172,1) 52%, rgba(140,60,238,1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main-container {
+  margin-top: 100px;
+  width: 500px;
+  height: auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,4,70,1) 0%, rgba(9,0,64,1) 100%, rgba(68,46,193,1) 100%);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+      width: 90%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-field input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 3px solid rgba(57,30,214,1);
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.input-field .edit {
+  color: lawngreen;
+}
+
+.input-field .add button {
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  font-weight: 600;
+  background: linear-gradient(90deg, rgba(57,30,214,1) 0%, rgba(69,41,161,1) 50%, rgba(127,48,195,1) 100%);
+}
+
+.list-items {
+  margin-top: 30px;
+}
+
+.item {
+  width: 100%;
+}
+
+.item .para {
+  padding: 7px;
+  width: 90%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  background: linear-gradient(90deg, rgba(60,9,168,1) 0%, rgba(82,33,172,1) 52%, rgb(157, 53, 226) 100%);
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.item .actions {
+  margin-left: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.item .actions .edit {
+  color: lawngreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item .actions .delete {
+  color: crimson;
+}
+
+.delete-all {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 30px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
 }
