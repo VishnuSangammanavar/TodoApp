@@ -20,7 +20,8 @@ body {
 
 @media (max-width: 768px) {
   .main-container {
-      width: 90%;
+      width: 95%;
+      padding: 30px;
   }
 }
 
